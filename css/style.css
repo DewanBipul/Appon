@@ -1,0 +1,882 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+
+}
+
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        nav-bar css start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+nav {
+    background:  transparent;
+   
+    position: absolute !importent;
+    top: 100px;
+    left: 0;
+    padding-top: 0 !important;
+    z-index: 9999;
+    width: 100%;
+
+}
+
+
+nav ul li a {
+    color: white;
+    transition: .4s;
+    position: relative;
+    margin-left: 10px;
+}
+
+nav ul li a:hover {
+    color: #744fa0;
+    transition: .4s;
+}
+
+nav ul li a:after {
+    width: 0%;
+    height: 2px;
+    background: #744fa0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    transition: .4s;
+
+}
+
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+nav .button {
+    text-align: center;
+    background: #744fa0;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+nav .button a {
+    color: #f1f1f1;
+    padding: 10px 20px;
+
+
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        nav-bar css end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        banner-part css start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+#banner-part {
+    background: url(../images/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+
+#banner-part .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    color: white;
+    text-align: right;
+    padding-top: 140px;
+    padding-bottom: 130px;
+}
+
+#banner-part .overlay h1 {
+    font-size: 56px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+#banner-part .overlay h1 span {
+    color: #744fa0;
+}
+
+#banner-part .overlay h2 {
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+#banner-part .overlay h2:after {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    height: 2px;
+    width: 200px;
+    background: #f1f1f1;
+    content: "";
+}
+
+#banner-part .overlay p {
+    font-size: 14px;
+    width: 443px;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+#banner-part .button {
+
+    display: flex;
+
+}
+
+#banner-part .button a {
+    color: black;
+    background: #fff;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    position: relative;
+    margin-left: 20px;
+
+}
+
+#banner-part .button a span {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#banner-part .button a i {
+    font-size: 33px;
+    color: black;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px 5px;
+
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        banner-part css end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            about-part css start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+#about-part {
+    margin-top: 90px;
+}
+
+
+#about-part .text p {
+    font-size: 14px;
+    width: 522px;
+    text-align: center;
+}
+
+#about-part .text p span {
+    margin-top: 40px;
+    display: inline-block;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            about-part css end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            feature-part css start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+#feature-part {
+    background: #f1f1f1;
+}
+
+#feature-part .feature {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#feature-part .lock {
+    display: flex;
+    padding-bottom: 36px;
+    padding-top: 30px;
+}
+
+#feature-part .icon {
+    position: relative;
+}
+
+#feature-part .icon i {
+    font-size: 40px;
+    position: absolute;
+    top: 6px;
+    right: -26px;
+    transition: .4s;
+    padding-bottom: 26px;
+
+}
+
+
+
+
+#feature-part .text {
+    margin-left: 35px;
+}
+
+#feature-part .text h1 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    transition: .4s;
+
+}
+
+#feature-part .text span {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    transition: .4s;
+}
+
+#feature-part .text h1:after {
+    width: 270px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: -60px;
+    left: -36px;
+    content: "";
+    transition: .4s;
+}
+
+#feature-part .lock {
+    cursor: pointer;
+}
+
+#feature-part .lock:hover h1 {
+    color: #744fa0;
+}
+
+#feature-part .lock:hover span {
+    color: #744fa0;
+}
+
+#feature-part .lock:hover i {
+    color: #744fa0;
+}
+
+#feature-part .lock:hover h1:after {
+    background: #744fa0;
+    width: 370px;
+}
+
+#feature-part .img img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+#feature-part .details {
+    text-align: right;
+    padding-top: 30px;
+
+
+}
+
+#feature-part .details h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#feature-part .details p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    width: 360px;
+    margin-right: auto;
+}
+
+#feature-part .details span {
+    display: block;
+    margin-top: 30px;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            feature-part css end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            screenshot-part css start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+#screenshot-part {
+    margin-top: 30px;
+}
+
+#screenshot-part .image-slider img {
+    margin: 30px 15px;
+}
+
+#screenshot-part ul {
+    text-align: center;
+}
+
+#screenshot-part ul li {
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+#screenshot-part ul li button {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: transparent;
+    font-size: 0;
+    outline: 0;
+    position: relative;
+}
+
+#screenshot-part ul li button:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 8px;
+    width: 8px;
+    background: #744fa0;
+    transform: translate(-50%, -50%);
+    content: "";
+    border-radius: 50%;
+    opacity: 0;
+}
+
+#screenshot-part ul .slick-active button:after {
+    opacity: 1;
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            screenshot-part css end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            watch-part css start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+#watch-part {
+    padding-top: 30px;
+}
+
+#watch-part .watch {
+    margin-top: 30px;
+    position: relative;
+}
+
+#watch-part .watch img {
+    width: 100%;
+}
+
+#watch-part .watch .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#watch-part .watch .overlay i {
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            watch-part css end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            pricing-part css start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+#pricing-part {
+    padding-top: 100px;
+}
+
+
+#pricing-part .price {
+    margin-top: 38px;
+}
+
+
+#pricing-part .price .item {
+    color: black;
+    text-align: center;
+
+}
+
+
+#pricing-part .price .item h1 {
+    background: #f1f1f1;
+    font-size: 18px;
+    padding: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+
+#pricing-part .price .item .borer {
+    height: 135px;
+    width: 135px;
+    border: 1px solid #000;
+    margin: 20px auto;
+    border-radius: 50%;
+
+}
+
+#pricing-part .price .item .borer h2 {
+    text-align: center;
+    font-size: 47px;
+}
+
+#pricing-part .price .item .borer h2 span {
+    font-size: 16px;
+
+}
+
+#pricing-part .price .item .borer .h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#pricing-part .price .item ul {
+    padding: 30px 0;
+    background: #f1f1f1;
+}
+
+#pricing-part .price .item ul li {
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#pricing-part .price .item ul li a {
+    border: 2px solid #000;
+    padding: 5px 12px;
+    position: absolute;
+    bottom: 0;
+    left: 94px;
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+#pricing-part .item:hover h1 {
+    background: #744fa0;
+    color: #fff;
+
+}
+
+#pricing-part .item:hover ul li a {
+    background: #744fa0;
+    color: #fff;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            pricing-part css end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            team-part css start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+#team-part {
+    margin-top: 100px;
+}
+
+#team-part .title {
+    margin-bottom: 50px;
+}
+
+#team-part .item .image img {
+    width: 100%;
+ 
+
+}
+
+#team-part .item:hover{
+    transition: .4s;
+}
+
+#team-part .item:hover{
+    transform: scaleY(1.1);
+}
+
+#team-part .item .image {
+    position: relative;
+}
+
+#team-part .item .image .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    opacity: 0;
+
+
+
+}
+
+
+#team-part .item .image:hover .overlay {
+    opacity: 1;
+}
+
+
+
+#team-part .item .image .overlay .icon {
+    text-align: center;
+    padding-top: 50%;
+}
+
+
+
+
+
+#team-part .item .image .overlay .icon i {
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: .4s;
+
+}
+
+#team-part .item .image .overlay .icon i:hover {
+    background: #1da1f2;
+    color: #fff;
+}
+
+
+#team-part .item .text {
+    text-align: center;
+    padding: 30px 0;
+    border: 1px solid transparent;
+    border-top: 0;
+   transition:.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+#team-part .item:hover .text{
+    border-color: black;
+    visibility: visible;
+    opacity: 1;
+}
+
+#team-part .item .text h1 {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    
+}
+
+
+
+#team-part .item .text h4 {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+#team-part .item .text p {
+
+    font-size: 13px;
+    width: 208px;
+    margin: 0 auto;
+   
+}
+
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            team-part css end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            feedback-part css start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+#feedback-part{
+    margin-top: 100px;
+}
+
+
+#feedback-part .feedback{
+    margin-top: 100px;
+    background: url(../images/feedback-banner.png) no-repeat center;
+    background-size: cover;
+   
+   
+}
+
+#feedback-part .feedback .overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+   
+}
+
+#feedback-part .feed-slider{
+    padding-top: 30px;
+}
+
+#feedback-part .feed-slider .item .text{
+    text-align: center;
+    color: #000;
+    background: #fff;
+    width: 70%;
+    margin: 0 auto;
+    
+    
+}
+
+#feedback-part .feed-slider .item .text  p{
+    font-size: 14px;
+       font-family: 'Raleway', sans-serif;
+    width: 625px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+#feedback-part .feed-slider .item .text h4{
+    color: #744fa0
+}
+
+
+#feedback-part .feed-slider .item .text h2{
+    font-size: 18px;
+    font-weight: bold;
+    width: 118px;
+    margin: 0 auto;
+      padding-bottom: 20px;
+}
+
+#feedback-part .feed-slider .text h2 span{
+    font-size: 14px;
+  
+}
+
+#feedback-part .feed-slider .item .image{
+
+    margin-top: 30px;
+}
+
+#feedback-part .feed-slider .item .image img{
+    height: 150px;
+    width: 150px;
+    margin-left: 45%;
+}
+
+#feedback-part .feed-slider ul{
+    text-align: center;
+    padding: 30px 0;
+    
+}
+
+
+#feedback-part .feed-slider ul li {
+    display: inline-block;
+    margin-left: 10px;
+    
+    
+}
+
+
+#feedback-part .feed-slider ul li button{
+    height: 20px;
+    width: 20px;
+    font-size: 0;
+    background: transparent;
+    border-radius: 50%;
+    outline: 0;
+    border-color: #744fa0;
+    position: relative;
+}
+
+
+#feedback-part .feed-slider ul li button:after{
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #744fa0;
+    content: "";
+    opacity: 0;
+}
+
+#feedback-part .feed-slider ul .slick-active button:after{
+    opacity: 1;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            feedback-part css end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            touch-part css start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+#touch-part form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#touch-part input{
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1 px solid #000;
+    padding-left: 10px;
+  
+}
+
+
+#touch-part textarea{
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    padding-left: 10px;  
+    border-radius: 5px;
+}
+
+
+#touch-part  button{
+    background: #744fa0;
+    color: #f1f1f1;
+    font-size: 18px;
+     font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding: 10px 30px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+    
+}
+
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            touch-part css end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            fotter-part css start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+#fotter-part{
+    text-align: center;
+    background: #000;
+    padding: 30px 0;
+}
+
+#fotter-part .icon{
+    margin: 30px 0;
+}
+
+#fotter-part .icon a i{
+    height: 50px;
+    width: 50px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    line-height: 50px;
+    transition: .4s;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+
+#fotter-part .icon a i:hover{
+    background: #1da1f2;
+    color: white;
+}
+
+#fotter-part p{
+    color: white;
+    margin-top: 20px;
+}
+
+#fotter-part p span{
+    color:  #744fa0;
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            fotter-part css end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
